@@ -8,4 +8,6 @@ pub enum Error {
     ExceededMaxOffset(usize, usize),
     /// Requested index: {0} exceeds number of nodes or leaves: {1}
     ExceededMaxIndex(usize, usize),
+    /// Hash function tried to hash different types of nodes
+    NodeTypeMismatch,
 }
